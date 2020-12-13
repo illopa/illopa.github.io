@@ -900,7 +900,7 @@ function htmlstep(s,i) {
     if ( i >= mem.length) { result(s); }
     let instr = mem[i];
     let [dax,day] = [p.trasfX(s.E),p.trasfY(s.N)];
-    let nexts = aoc.step(s,instr);
+    let nexts = aoc201201.step(s,instr);
     let [ax,ay] = [p.trasfX(nexts.E),p.trasfY(nexts.N)];
     console.log(dax,day,ax,ay);
     stage.path()
